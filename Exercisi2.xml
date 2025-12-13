@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg_musica SYSTEM "Exercisi2.dtd">
+<cataleg_musica>
+    <llista_artistes>
+        <artista id="art1">
+            <nom>Phill Collins</nom>
+            <genere>Rock</genere>
+            <pais>Estats Units</pais>
+        </artista>
+        <artista id="art2">
+            <nom>Jul</nom>
+            <genere>TRAP</genere>
+            <pais>França</pais>
+        </artista>
+        <artista id="art3">
+            <nom>Morad</nom>
+            <genere>Trap</genere>
+            <pais>Espanya</pais>
+        </artista>
+    </llista_artistes>
+    <llista_albumes>
+        <album id="al1">
+            <titol>At the tower</titol>
+            <artistes>
+                <artista_ref ref="art1" />
+            </artistes>
+            <any></any>
+        </album>
+        <album id="al2">
+            <titol>Se Grita</titol>
+            <artistes>
+                <artista_ref ref="art2" />
+                <artista_ref ref="art3" />
+            </artistes>
+            <any>2020</any>
+        </album>
+        <album id="al3">
+            <titol>D&amp;P à vie</titol>
+            <artistes>
+                <artista_ref ref="art2" />
+            </artistes>
+            <any>2025</any>
+        </album>
+    </llista_albumes>
+    <llista_recomanacions_albumes>
+        <recomanacio ref="al2" />
+        <recomanacio ref="al1" />
+        <recomanacio ref="al3" />
+    </llista_recomanacions_albumes>
+
+</cataleg_musica>

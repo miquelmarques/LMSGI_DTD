@@ -1,0 +1,13 @@
+<!ELEMENT joc (titol, companyia, plataforma+, anyLlançament, personatges, nivells)>
+<!ELEMENT titol (PCDATA)>
+<!ELEMENT companyia (PCDATA)>
+<!ELEMENT plataforma (PCDATA)>
+<!ELEMENT anyLlançament (PCDATA)>
+<!ELEMENT personatges (personatge+ )>
+<!ELEMENT personatge (nom, rol)>
+<!ELEMENT rol (PCDATA)>
+<!ELEMENT nivells (nivell+)>
+<!ELEMENT nivell (nom)>
+<!ELEMENT nom (PCDATA)>
+<!ATTLIST personatge tipus CDATA #REQUIRED>
+<!ATTLIST nivell dificultat (baixa|mitjana|alta) #REQUIRED>
